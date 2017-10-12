@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+body {
+    background-image: url("ALL-STARS.jpg");
+    background-size: cover;
+}
+
+.searchbox {
+    width: 600px;
+    height: 200px;
+    display: inline-block;
+      
+    margin-left: -20px;
+    margin-top: 220px;
+}
+
+.division{
+  width:100%;
+  height:100px;
+  color: black;
+  text-align: center;
+}
+
+input[type=text] {
+    width: 250px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgba(0,0,0,0.7);
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    color:white;
+}
+
+input[type=text]:focus {
+    width: 70%;
+}
+</style>
+</head>
+<body onkeypress=if(event.keyCode==13)searchenter()>
+
+<div class="searchbox">
+    <div id="firstDivision" class="division">
+    <p><h1>Player Search</h1></p>
+  
+    <form>
+        <input type="text" name="search" placeholder="Enter Player Name">
+       
+    </form>
+<script>
+    function searchenter()
+    {
+    	
+        window.open("Player.php");
+    }
+</script>
+</div>
+</div>
+</body>
+</html>

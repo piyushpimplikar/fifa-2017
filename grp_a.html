@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GROUP_A</title>
+
+<style>
+.container1 {
+    overflow: hidden;
+     background-color:rgba(2, 72, 5,0.8);
+    
+}
+
+.container1 a {
+     
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.f1 {
+	text-align: center;
+	color: white;
+	font-size:45px;
+	font-weight:400;
+     }
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+   
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.container1 a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: ivory;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+body
+   {
+    text-align: center;
+    background-image: url("back.png");
+    background-size:cover;
+    font-family: sans-serif;
+    font-weight: 100;
+    background-repeat: no-repeat;
+    }
+
+p
+{
+	font-size:20px; 
+	font-style: italic;
+	font-family: Monoline;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 20px;
+        color:ivory;
+	position: relative;
+     	left: 250px;
+}
+
+p1
+{
+	font-size:20px; 
+	font-style: italic;
+	font-family: Monoline;
+	text-align: center;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 20px;
+        color:black;
+
+}
+
+.containermain {
+  width:100%;
+  height:250px;
+  background-color: rgba(0,0,0,0.5);
+  margin-right: 100px;
+  margin-left:100px
+  margin-top:10px;
+  margin-bottom: 10px;
+  border-radius:10px;
+}
+
+header{
+    margin-top:5px;
+    width:100%;
+    height:50px;
+    color: white;
+    background-color: rgba(255,204,0,0.5);
+    text-align: center;
+    border-radius:10px;
+}
+
+.imagestyle {
+		height : 200px; 
+		width : 200px; 
+		margin-bottom: 25px; 
+		margin-top: 25px;
+		margin-left: 50px;
+		margin-right: 15px;
+		border-radius:50%;
+	}
+r1{
+    font-size:35px;
+    font-weight:350;
+}
+
+
+</style>
+</head>
+<body>
+
+<img src="emblem3.png" align="left" style="width:60px;height:100px;">
+<img src="fifalogo3.png" align="left" style="width:300px;height:100px;">
+<br><br><br><br><br><br>
+
+<div class="container1">
+   <a href="home.html"> HOME</a>
+   <a href="template.html#matches"> MATCHES</a>
+   <a href="template.html#players"> PLAYERS</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">TEAMS</button>
+    <div class="dropdown-content">
+      <a href="template.html#group_A">GROUP A</a>
+      <a href="template.html#group_B">GROUP B</a>
+     
+    </div>
+  </div> 
+
+  <div class="dropdown">
+    <button class="dropbtn">SCORES AND SCHEDULES </button>
+    <div class="dropdown-content">
+      <a href="#live_scores">LIVE SCORES</a>
+	  <a href="#schedules">SCHEDULES</a>
+    </div>
+  </div>
+      <a href="template.html#awards"> AWARDS</a>
+      <a href="template.html#venues"> VENUES</a>
+
+</div>
+<br>
+
+ <div class="f1">GROUP A </div>
+<br>
+
+<header><r1>SPAIN</r1></header>
+<div class="containermain">
+<img src="esp.jpg" class="imagestyle" align="left">
+</div>
+
+<header><r1>PORTUGAL</r1></header>
+<div class="containermain">
+<img src="por.png" class="imagestyle" align="left">
+</div>
+
+<header><r1>BRAZIL</r1></header>
+<div class="containermain">
+<img src="bra.png" class="imagestyle" align="left">
+</div>
+
+<header><r1>ITALY</r1></header>
+<div class="containermain">
+<img src="ita.png" class="imagestyle" align="left">
+</div>
+
+</body>
+</html>

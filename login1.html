@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+function validateForm() 
+{
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    if ( username == "admin" && password == "admin123")
+    {
+    alert ("Login successfull");
+    window.location = "admin1.html"; // Redirecting to other page.
+    return false;
+    }
+
+    else
+    {
+        alert("You seem to have forgotten the Password")
+        return false;
+    }
+
+
+
+}
+</script>
+</head>
+
+<style>
+
+body{
+background-image: url(bg.jpg);
+background-size:cover; 
+overflow-y: auto;
+
+}
+
+input[type=text], input[type=password] 
+{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    
+}
+
+input[type=button]{
+font-size: 16px;
+background-color:#4c4cff;
+color: white;
+border: 1px solid #4c4cff  ;
+font-weight: bold;
+cursor: pointer;
+width: 20%;
+border-radius: 5px;
+padding: 10px 0;
+outline:none;
+margin-bottom:-80px ; 
+}
+
+input[type=button]:hover{
+background-color: #004c00;
+border: 1px solid:#004c00  ;
+}
+
+h1
+{
+    color: black;
+}
+
+</style>
+<body>
+
+<center><h1>ADMIN LOGIN</h1>
+
+<form name="myForm" action="admin1.html" onsubmit="return validateForm()" method="post">
+
+  <img src="log.jpg" align="center" style="width:250px;height:250px;border-radius:50%;">
+    <br><br><br><br>
+    
+    <form id="form_id" method="post" name="myform">
+    <!--label><b>User Name :</b></label-->
+    
+    <input type="text" name="username" id="username" placeholder="Username" />
+    <br><br>
+    <!--label><b>Password :<b></label-->
+    
+    <input type="password" name="password" id="password" placeholder="Password" />
+    <br>
+<input type="button" value="Login" id="submit" onclick="validateForm()"/>
+    </form>
+</center>
+</body>
+</html>
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+<title>HOME</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="home.css">
+ 
+ 
+ 
+
+</head>
+
+
+
+
+<body>
+<img src="emblem3.png" align="left" style="width:60px;height:100px;">
+<img src="fifalogo3.png" align="left" style="width:300px;height:100px;">
+<p>Tournament Begins In</p>
+
+<div id="clockdiv">
+  <div>
+    <span id="days"></span>
+    <div class="smalltext">Days</div>
+  </div>
+  <div>
+    <span id="hours"></span>
+    <div class="smalltext">Hours</div>
+  </div>
+  <div>
+    <span id="minutes"></span>
+    <div class="smalltext">Minutes</div>
+  </div>
+  <div>
+    <span id="seconds"></span>
+    <div class="smalltext">Seconds</div>
+  </div>
+</div>
+<div class="container1">
+ <a href="home.html"> HOME</a>
+ <a href="http://localhost/FIFA/schedule.php#matches"> SCHEDULES</a>
+ <a href="http://localhost/FIFA/search1.php#players"> PLAYERS</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">TEAMS</button>
+    <div class="dropdown-content">
+      <a href="http://localhost/FIFA/grp_a.php#group_A">GROUP A</a>
+	  <a href="http://localhost/FIFA/grp_b.php#group_B">GROUP B</a>
+     
+    </div>
+  </div> 
+
+  
+ <a href="http://localhost/FIFA/pt.php#schedules">STANDINGS</a>
+
+ <a href="http://localhost/FIFA/award1.php#awards"> AWARDS</a>
+ <a href="venue.html#venues"> VENUES</a>
+
+ <a href="login.html">ADMIN</a>
+</div>
+<br>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+  <img src="1.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+  <img src="3.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+  <img src="6.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+  <img src="7.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+  <img src="8.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+  <img src="9.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+  <img src="10.jpg" style="width:100%">
+  </div>
+</div>
+<p1>Copyrights@Group01_M10batch</p1>
+<br>
+<a href="https://www.facebook.com/"  class="fa fa-facebook"></a>
+<a href="https://twitter.com/login?lang=en"  class="fa fa-twitter"></a>
+<a href="https://www.google.co.in/?gfe_rd=cr&dcr=0&ei=4yjBWeLtMbHy8AfC8anIBg&gws_rd=ssl" " class="fa fa-google"></a>
+
+<script>
+
+
+
+/*-------------------------------------JAVASCRIPT FOR SLIDES-----------------------------------------*/
+var slideIndex = 0;
+showSlides();
+function showSlides() 
+{
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    
+    slides[slideIndex-1].style.display = "block";  
+    
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+
+
+
+/*----------------------------------------------JAVASCRIPT FOR TIMER----------------------------------------------------------------*/
+
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 25, 2017 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+</body>
+</html>
